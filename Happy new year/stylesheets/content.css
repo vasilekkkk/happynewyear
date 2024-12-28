@@ -1,0 +1,931 @@
+*{ box-sizing: border-box;}
+body{ 
+    width: 100%;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Regular";
+    src: url("../fonts/HoltwoodOneSC-Regular.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Regularforletters";
+    src: url("../fonts/Raleway-Regular.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+.section_first{
+    width: 100%;
+    height: 55.9vw;
+    position: relative;
+    background: #3F55A3;
+}
+.garlandbig{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    display: block; /* как кубики */
+ }
+.garlandd{
+    width: 100%;
+    position: relative;
+}
+
+/* .garlandmove{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background: url(../img/garland.png);
+    background-size: 100% 100%;
+    animation: garlandmovedo 5s steps(33) infinite;
+    z-index: 3;
+} */ 
+/* @keyframes garlandmovedo {
+    0%{ background-position: 0%;}
+    100%{ background-position: -3600%;}
+} */
+
+.tree1{
+    position: absolute;
+    width: 20%;
+    left: 80%;
+}
+.ontree1{
+    position: absolute;
+    width: 35%;
+    left: 74%;
+    top: 8.5%;
+}
+.snow1{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    top: 75.4%;
+}
+.presentblue1{
+    position: absolute;
+    width: 9%;
+    left: 87%;
+    top: 72%;
+}
+.gingerbread1{
+    position: absolute;
+    width: 12%;
+    left: 28%;
+    top: 66%;
+    animation: privet 3s ease infinite;
+}
+@keyframes privet {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+}
+.snowman1{
+    position: absolute;
+    width: 18%;
+    left: 8%;
+    top: 24%;
+    z-index: 5;
+}
+.hand11{
+    position: absolute;
+    width: 7.5%;
+    left: 6%;
+    top: 52%;
+    transform-origin: 100% 0;
+    animation: mashet 2s linear infinite;
+}
+@keyframes mashet{
+    0% {transform: rotate(40deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(40deg);}
+}
+.hand2{
+    position: absolute;
+    width: 12.4%;
+    left: 21%;
+    top: 43.7%;
+    transform-origin: center left;
+    animation: mashet2 2s linear infinite;
+}
+@keyframes mashet2{
+    0% {transform: rotate(-40deg);}
+    50% {transform: rotate(-0.7deg);}
+    100% {transform: rotate(-40deg);}
+}
+.eye2{
+    position: absolute;
+    width: 1.45%;
+    left: 15%;
+    top: 36%;
+    z-index: 5;
+    animation: morgaet 2s linear infinite;
+}
+@keyframes morgaet{
+    0%{ transform: scale(1, 1);}
+    50%{ transform: scale(1, 0.2);}
+    100%{ transform: scale(1, 1);}
+}
+.section_second{
+    width: 100%;
+    overflow-x: hidden;
+    height: 18vw;
+    position: relative;
+    z-index: 1;
+    background: #362E2B;
+}
+.roof1{
+    width: 100%;
+}
+.stroka1{
+    width: 100%; 
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Regularforletters";
+    font-size: 3vw;
+    top: 14%;
+    z-index: 2;
+    color: #113380;
+    animation: strokamove 10s linear infinite;
+    transition: all 1s linear;
+}
+span{
+    font-family: "Regular";
+}
+.stroka1:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+@keyframes strokamove{
+    0%{left: 0%;}
+    100%{left: -110%;}
+}
+.section_third{
+    width: 100%;
+    height: 32vw;
+    display: flex;
+    position: relative;
+    background: #362E2B;
+    z-index: 2;
+    gap: 2%;
+    margin-top: -1%;
+}
+.snowwater1{
+    width: 18%;
+    position: absolute;
+    margin-top: -18.6%;
+    margin-left: 67.5%;
+}
+.kapkapkap{
+    width: 2%;
+    position: absolute;
+    margin-top: -18.3%;
+    margin-left: 80%;
+    animation: kapkapkapgo 3s linear infinite;
+}
+@keyframes kapkapkapgo{
+    0%{left: 0%; top: 0%; opacity: 0;}
+    25%{left: -6%; top: 10%; opacity: 1;}
+    50%{left: -5%; top: 30%; opacity: 1;}
+    75%{left: -4.5%; top: 40%; opacity: 1;}
+    100%{left: -3%; top: 60%; opacity: 0;}
+}
+.window1{
+    width: 43%;
+    position: relative;
+    margin-left: 6%;
+}
+.okno{
+    width: 100%;
+    position: absolute;
+}
+.hat{
+    width: 45%;
+    position: absolute;
+    z-index: 1;
+    left: 26%;
+    top: 15%;
+    animation: hatmove 3s ease infinite;
+}
+@keyframes hatmove{
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.vnutriokna{
+    width: 95.4%;
+    height: 70%;
+    overflow: hidden;
+    position: absolute;
+    top: 1.9%;
+    left: 2.2%;
+    border-radius: 7px;
+    color: #362E2B;
+}
+.star1{
+    width: 25%;
+    position: absolute;
+    top: 10%;
+    animation: stargo1 7s linear infinite;
+}
+@keyframes stargo1{
+    0%{left: 0%; top: 30%; rotate: 0deg}
+    100%{left: 83%; top: 3%; rotate: 360deg;}
+}
+.star2{
+    width: 25%;
+    top: 55%;
+    position: absolute;
+    animation: stargo2 8s linear infinite;
+}
+@keyframes stargo2{
+    0%{left: -40%; top: -6%; rotate: 0deg}
+    100%{left: 100%; top: 65%; rotate: 360deg;}
+}
+.star3{
+    width: 25%;
+    top: 6%;
+    position: absolute;
+    animation: stargo3 6s linear infinite;
+}
+@keyframes stargo3{
+    0%{left: -30%; top: -10%; rotate: 0deg}
+    100%{left: 100%; top: 15%; rotate: 360deg;}
+}
+.star4{
+    width: 25%;
+    position: absolute;
+    animation: stargo4 7s linear infinite;
+}
+@keyframes stargo4{
+    0%{left: -20%; top: 50%; rotate: 0deg}
+    100%{left: 100%; top: 55%; rotate: 360deg;}
+}
+.star1:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.star2:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}.star3:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}.star4:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.window2{
+    width: 43%;
+    position: relative;
+}
+.socks{
+    width: 53%;
+    position: absolute;
+    left: 36%;
+    top: 15%;
+}
+.socks1{
+    width: 53%;
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: 36%;
+    opacity: 0;
+}
+.flower1{
+    width: 13%;
+    position: absolute;
+    left: 13%;
+    top: 10%;
+}
+.flower2{
+    width: 13%;
+    position: absolute;
+    left: 13%;
+    top: 32%;
+}
+.flower2:hover ~ .socks1{
+    opacity: 1;
+}
+.flower3{
+    width: 13%;
+    position: absolute;
+    left: 13%;
+    top: 54%;
+}
+.flower3:hover ~ .socks2{
+    opacity: 1;
+}
+.socks2{
+    width: 53%;
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: 36%;
+    opacity: 0;
+}
+.section_4{
+    width: 8%;
+    height: 3vw;
+    position: absolute;
+}
+.tinsel1{
+    width: 43%;
+    position: absolute;
+    margin-left: 6%;
+    top: 73%;
+}
+.tinsel2{
+    width: 43%;
+    position: absolute;
+    margin-left: 51%;
+    top: -5.3%;
+}
+.pounce1{
+    width: 7.5%;
+    position: absolute;
+    margin-left: 4%;
+    top: 64%;
+    animation: uhy 2s linear infinite;
+}
+@keyframes uhy{
+    0%{rotate: 0deg}
+    100%{rotate: 360deg;}
+}
+.pounce1:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.pounce2{
+    width: 7.5%;
+    position: absolute;
+    margin-left: 89%;
+    top: -12%;
+    animation: uhy 2s linear infinite;
+}
+.pounce2:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.section_4{
+    width: 100%;
+    overflow-x: hidden;
+    height: 7vw;
+    position: relative;
+    background: #362E2B;
+}
+.bigtinsel{
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    animation: bigtinselmove 6s linear infinite;
+    transition: all 1s linear;
+}
+
+.red{
+    width: 100%;
+    animation: block 1s linear alternate infinite;
+}
+  
+@keyframes block {
+    0% {fill: green;}
+    100% {fill: blue;}
+}
+.section_5{
+    width: 100%;
+    overflow-x: hidden;
+    height: 59vw;
+    position: relative;
+    background: #362E2B;
+}
+.window3{
+    width: 79%;
+    position: relative;
+    margin-left: 10.5%;
+    top: 5%;
+}
+.vnutrioknafly{
+    width: 76.2%;
+    overflow-x: hidden;
+    position: absolute;
+    height: 76.3%;
+    margin-left: 12%;
+    top: 7.1%;
+}
+.yellowpresentone{
+    width: 16%;
+    position: absolute;
+    left: 9.8%;
+    animation: yellowpresentonego 3s ease-out infinite;
+}
+@keyframes yellowpresentonego{
+    0%{top: -50%;}
+    100%{top: 100%;}
+}
+.yellowpresentone:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.candyone{
+    width: 10%;
+    position: absolute;
+    left: 30%;
+    animation: candyonego 4s ease-out infinite;
+}
+@keyframes candyonego{
+    0%{top: -50%;}
+    100%{top: 100%;}
+}
+.candyone:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.bigbluepresentone{
+    width: 35%;
+    position: absolute;
+    left: 35%;
+    animation: bigbluepresentonego 7s ease-out infinite;
+}
+@keyframes bigbluepresentonego{
+    0%{top: -30%;}
+    100%{top: 100%;}
+}
+.bigbluepresentone:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.candytwo{
+    width: 13%;
+    position: absolute;
+    left: 60%;
+    animation: candytwogo 2s ease-out infinite;
+}
+@keyframes candytwogo{
+    0%{top: -60%;}
+    100%{top: 100%;}
+}
+.candytwo:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.greenpresentone{
+    width: 13%;
+    position: absolute;
+    left: 80%;
+    animation: greenpresentonego 6s ease-out infinite;
+}
+@keyframes greenpresentonego{
+    0%{top: -80%;}
+    100%{top: 100%;}
+}
+.greenpresentone:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.gingerbreadone{
+    width: 15%;
+    position: absolute;
+    left: 4%;
+    animation: gingerbreadonego 5s ease-out infinite;
+}
+@keyframes gingerbreadonego{
+    0%{top: -20%;}
+    100%{top: 100%;}
+}
+.gingerbreadone:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.greenpresenttwo{
+    width: 20%;
+    position: absolute;
+    left: 10%;
+    animation: greenpresenttwogo 6s ease-out infinite;
+}
+@keyframes greenpresenttwogo{
+    0%{top: -80%;}
+    100%{top: 110%;}
+}
+.greenpresenttwo:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+.yellowpresenttwo{
+    width: 13%;
+    position: absolute;
+    left: 42%;
+    animation: yellowpresenttwogo 4s ease-out infinite;
+}
+@keyframes yellowpresenttwogo{
+    0%{top: 0%;}
+    100%{top: 130%;}
+}
+.yellowpresenttwo:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.gingerbreadtwo{
+    width: 13%;
+    position: absolute;
+    left: 65%;
+    animation: gingerbreadtwogo 2s ease-out infinite;
+}
+@keyframes gingerbreadtwogo{
+    0%{top: 0%;}
+    100%{top: 100%;}
+}
+.gingerbreadtwo:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.yellowpresentthree{
+    width: 23%;
+    position: absolute;
+    left: 70%;
+    animation: yellowpresentthreego 4s ease-out infinite;
+}
+@keyframes yellowpresentthreego{
+    0%{top: -20%;}
+    100%{top: 100%;}
+}
+.yellowpresentthree:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.bluepresenttwo{
+    width: 20%;
+    position: absolute;
+    left: 2%;
+    animation: bluepresenttwogo 4s ease-out infinite;
+}
+@keyframes bluepresenttwogo{
+    0%{top: -20%;}
+    100%{top: 100%;}
+}
+.luepresenttwo:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.candythree{
+    width: 23%;
+    position: absolute;
+    left: 20%;
+    animation: candythreego 4s ease-out infinite;
+}
+@keyframes candythreego{
+    0%{top: -20%;}
+    100%{top: 100%;}
+}
+.candythree:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.greenpresentthree{
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    animation: greenpresentthreego 2s ease-out infinite;
+}
+@keyframes greenpresentthreego{
+    0%{top: -20%;}
+    100%{top: 100%;}
+}
+.greenpresentthree:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.bluepresentthree{
+    width: 15%;
+    position: absolute;
+    left: 80%;
+    animation: bluepresentthreego 2s ease-out infinite;
+}
+@keyframes bluepresentthreego{
+    0%{top: -20%;}
+    100%{top: 100%;}
+}
+.bluepresentthree:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.section_6{
+    width: 100%;
+    overflow-x: hidden;
+    height: 5vw;
+    position: relative;
+    background: #362E2B;
+}
+.stroka2{
+    width: 100%; 
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Regularforletters";
+    font-size: 3vw;
+    top: 5%;
+    z-index: 2;
+    color: #FEF401;
+    animation: strokamove 10s linear infinite;
+    transition: all 1s linear;
+}
+.stroka2:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+@keyframes strokamove{
+    0%{left: 0%;}
+    100%{left: -110%;}
+}
+.section_7{
+    width: 100%;
+    overflow-x: hidden;
+    height: 36vw;
+    position: relative;
+    background: #362E2B;
+}
+.pounce3{
+    width: 7.5%;
+    position: relative;
+    top: -65%;
+    left: -73%;
+    animation: uhy 2s linear infinite;
+}
+@keyframes uhy{
+    0%{rotate: 0deg}
+    100%{rotate: 360deg;}
+}
+.pounce3:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.pounce4{
+    width: 7.5%;
+    position: relative;
+    top: -65%;
+    left: -4.5%;
+    animation: uhy 2s linear infinite;
+}
+@keyframes uhy{
+    0%{rotate: 0deg}
+    100%{rotate: 360deg;}
+}
+.pounce4:hover{
+    animation-play-state: paused;
+    transition: all 1s linear infinite;
+}
+.window4{
+    width: 81%;
+    position: relative;
+    left: 9.5%;
+    margin-top: 5%;
+}
+.takeyourprersent{
+    width: 100%; 
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Regularforletters";
+    font-size: 3vw;
+    top: 72%;
+    margin-left: 33%;
+    z-index: 2;
+    color: #FA3838;
+}
+.vnuntrioknablock{
+    width: 78.9%;
+    height: 25vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 19.5%;
+    left: 10.5%;
+}
+.vnuntriokna2{
+    width: 100%;
+    height: 15vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 19%;
+    display: flex;
+    gap: 2%;
+    animation: windowgo 10s linear infinite;
+    transition: all 1s linear;
+}
+.vnuntriokna2:hover{
+    animation-play-state: paused; /* как новодим стоп */
+    transition: all 1s linear infinite;
+}
+@keyframes windowgo{
+    0%{left: -100%;}
+    100%{left: 100%;}
+}
+.box1{
+    width: 100%;
+    position: relative;
+} 
+.thisispresent1{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+}
+.thisispresent1:hover ~ .openit1{
+    opacity: 1;
+}
+.thisispresent1:hover{
+    opacity: 0;
+}
+.openit1{
+    width: 85%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 9%;
+    opacity: 0;
+}
+.box2{
+    width: 100%;
+    position: relative;
+} 
+.thisispresent2{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+}
+.thisispresent2:hover ~ .openit2{
+    opacity: 1;
+}
+.thisispresent2:hover{
+    opacity: 0;
+}
+.openit2{
+    width: 98%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 9%;
+    opacity: 0;
+}
+.box3{
+    width: 100%;
+    position: relative;
+} 
+.thisispresent3{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+}
+.thisispresent3:hover ~ .openit3{
+    opacity: 1;
+}
+.thisispresent3:hover{
+    opacity: 0;
+}
+.openit3{
+    width: 73%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 13.5%;
+    margin-top: 5%;
+    opacity: 0;
+}
+.box4{
+    width: 100%;
+    position: relative;
+} 
+.thisispresent4{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+}
+.thisispresent4:hover ~ .openit4{
+    opacity: 1;
+}
+.thisispresent4:hover{
+    opacity: 0;
+}
+.openit4{
+    width: 85%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 9%;
+    opacity: 0;
+}
+.box5{
+    width: 100%;
+    position: relative;
+} 
+.thisispresent5{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+}
+.thisispresent5:hover ~ .openit5{
+    opacity: 1;
+}
+.thisispresent5:hover{
+    opacity: 0;
+}
+.openit5{
+    width: 98%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 9%;
+    opacity: 0;
+}
+.section_8{
+    width: 100%;
+    overflow-x: hidden;
+    height: 7vw;
+    position: relative;
+    background: #362E2B;
+}
+.bigtinsel{
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    animation: bigtinselmove 6s linear infinite;
+    transition: all 1s linear;
+}
+.red{
+    width: 100%;
+    animation: block 1s linear alternate infinite;
+} 
+@keyframes block {
+    0% {fill: green;}
+    100% {fill: blue;}
+}
+.section_9{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    height: 18%;
+    background: #362E2B;
+}
+.santa1{
+    width: 30%;
+    margin-left: 6%;
+}
+.pouncefly1{
+    width: 20%;
+    margin-left: 5%;
+}
+.door1{
+    width: 30%;
+    margin-left: 5%;
+    position: relative;
+    z-index: 2;
+}
+.Waityou{
+    width: 100%; 
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Regularforletters";
+    font-size: 2.5vw;
+    top: 5%;
+    z-index: 2;
+    color: #ffffff;
+    left: 41%;
+    top: 20%;
+}
+.Waityou:hover ~ .light1{
+    opacity: 1;
+}
+.light1{
+    width: 30%;
+    position: absolute;
+    left: 36%;
+    top: 0.2%;
+    opacity: 0;
+}
+.section_10{
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    height: 10%;
+    background: #3F55A3;
+}
+.theend{
+    width: 100%; 
+    white-space: nowrap;
+    top: 33%;
+    left: 5%;
+    position: absolute;
+    font-family: "Regularforletters";
+    font-size: 2.5vw;
+    color: #39B64B;
+}
+.hse{
+    width: 100%;
+    position: absolute;
+    height: 90%;
+    left: 30%;
+    top: 6%;
+}

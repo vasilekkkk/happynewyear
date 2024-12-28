@@ -1,0 +1,21 @@
+@media (max-width: 414px) {
+    .bigtinsel{
+        opacity: 0;
+    }
+    .section_third{
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .door1{
+        position: absolute;
+    }
+    .section_10{
+        width: 100%;
+    }
+    .hse{
+        width: 50%;
+        left: 50%;
+        top: 2%;
+    }
+}
